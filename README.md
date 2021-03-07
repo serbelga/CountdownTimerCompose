@@ -1,27 +1,22 @@
-# Template repository
+# Countdown Timer
 
-Template repository for the Jetpack Compose [#AndroidDevChallenge](https://developer.android.com/dev-challenge).
+![Workflow result](https://github.com/serbelga/CountdownTimerCompose/workflows/Check/badge.svg)
 
-## Getting started
-Copy this repository by pressing the "Use this template" button in Github.
-Clone your repository and open it in the latest [Android Studio (Canary build)](https://developer.android.com/studio/preview).
+## :scroll: Description
 
-## Submission requirements
-- Follow the challenge description on the project website: [developer.android.com/dev-challenge](https://developer.android.com/dev-challenge)
-- All UI should be written using Jetpack Compose
-- The Github Actions workflow should complete successfully
-- Include two screenshots of your submission in the [results](results) folder. The names should be
-  screenshot_1.png and screenshot_2.png.
-- Include a screen record of your submission in the [results](results) folder. The name should be
-  video.mp4
-- Replace the contents of [README.md](README.md) with the contents of [README-template.md](README-template.md) and fill out the template.
+An application built with Jetpack Compose that allows you to set a timer (minutes and seconds).
 
-## Code formatting
-The CI uses [Spotless](https://github.com/diffplug/spotless) to check if your code is formatted correctly and contains the right licenses.
-Internally, Spotless uses [ktlint](https://github.com/pinterest/ktlint) to check the formatting of your code.
-To set up ktlint correctly with Android Studio, follow one of the [listed setup options](https://github.com/pinterest/ktlint#-with-intellij-idea).
+## :bulb: Motivation and Context
 
-Before committing your code, run `./gradlew app:spotlessApply` to automatically format your code.
+The countdown timer is made up by a selection screen where user can select a value for minutes and seconds. The 'Play FAB' is only visible if user select a countdown value greater than 0:00. This change in visibility is based on a 'fade in' and 'expand in' animation.
+
+Once Play FAB is clicked, the countdown begins and an animated progress bar that fills the screen size will shrink with the progress. User can see the time remaining and every second the text is updated with an animation. The countdown can be also paused or restarted to set another value. 
+
+Finally, when countdown reaches 0:00, an infinite animation is launched and user will see the ‘0:00’ with a blinking effect.
+
+## :camera_flash: Screenshots
+
+<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
 
 ## License
 ```
